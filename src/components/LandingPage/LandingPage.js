@@ -7,7 +7,7 @@ const landingPage = () => {
 		<div className={cls.LoadingPageContainer}>
 			<div className={cls.myInfoContainer}>
 				<h1 className={cls.myName}>Logan Wood</h1>
-				<p className={cls.myDescription}>Teacher, developer, problem solver</p>
+				<p className={cls.myDescription}>Educator - Developer - Problem Solver</p>
 				<div className={cls.nextSectionArrowContainer}>ARROW GOES HERE</div>
 			</div>
 		</div>
