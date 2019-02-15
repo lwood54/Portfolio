@@ -4,30 +4,33 @@ import cls from './LandingPage.module.css';
 
 class LandingPage extends Component {
         state = {
-                hoverDescription: false
+                hideArrow: true
         };
 
-        handleHover = () => {
-                let hover = this.state.hoverDescription;
-                this.setState({ hoverDescription: !hover });
+        toggleHover = () => {
+                let hide = this.state.hideArrow;
+                this.setState({ hideArrow: !hide });
         };
 
-        handleOut = () => {
-                alert('out');
-        };
         render() {
                 return (
                         <div className={cls.LoadingPageContainer}>
                                 <div className={cls.myInfoContainer}>
                                         <h1 className={cls.myName}>Logan Wood</h1>
-                                        <p className={cls.myDescription} onMouseEnter={this.handleHover}>
+                                        <p
+                                                className={cls.myDescription}
+                                                onMouseEnter={this.toggleHover}
+                                                onMouseLeave={this.toggleHover}
+                                        >
                                                 Educator - Developer - Problem Solver
                                         </p>
-                                        <div
-                                                className={cls.nextSectionArrowContainer}
-                                                hidden={this.state.hoverDescription}
-                                        >
-                                                ARROW GOES HERE
+                                        <div className={cls.nextSectionArrowContainer}>
+                                                <div
+                                                        className={cls.nextSectionArrow}
+                                                        hidden={this.state.hideArrow}
+                                                >
+                                                        ARROW GOES HERE
+                                                </div>
                                         </div>
                                 </div>
                         </div>
