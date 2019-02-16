@@ -41,6 +41,18 @@
         margin-top: 30vh;
 }
 
+.hideNextSectionArrow {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 0.5s linear;
+}
+
+.showNextSectionArrow {
+        visibility: visible;
+        opacity: 1;
+        transition: 1.75s;
+}
+
 /********* MEDIA QUERIES *********************/
 
 @media (min-width: 1100px) {

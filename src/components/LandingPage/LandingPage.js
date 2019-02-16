@@ -13,6 +13,12 @@ class LandingPage extends Component {
         };
 
         render() {
+                let arrowClass = null;
+                if (this.state.hideArrow) {
+                        arrowClass = cls.hideNextSectionArrow;
+                } else {
+                        arrowClass = cls.showNextSectionArrow;
+                }
                 return (
                         <div className={cls.LoadingPageContainer}>
                                 <div className={cls.myInfoContainer}>
@@ -25,12 +31,7 @@ class LandingPage extends Component {
                                                 Educator - Developer - Problem Solver
                                         </p>
                                         <div className={cls.nextSectionArrowContainer}>
-                                                <div
-                                                        className={cls.nextSectionArrow}
-                                                        hidden={this.state.hideArrow}
-                                                >
-                                                        ARROW GOES HERE
-                                                </div>
+                                                <div className={arrowClass}>ARROW HERE</div>
                                         </div>
                                 </div>
                         </div>
