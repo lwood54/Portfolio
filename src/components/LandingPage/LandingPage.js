@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import cls from './LandingPage.module.css';
 
@@ -31,7 +33,12 @@ class LandingPage extends Component {
                                                 Educator - Developer - Problem Solver
                                         </p>
                                         <div className={cls.nextSectionArrowContainer}>
-                                                <div className={arrowClass}>ARROW HERE</div>
+                                                <div className={arrowClass}>
+                                                        <FontAwesomeIcon
+                                                                icon={faChevronDown}
+                                                                className={cls.arrowDown}
+                                                        />
+                                                </div>
                                         </div>
                                 </div>
                         </div>
