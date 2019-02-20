@@ -6,33 +6,26 @@ import { configureAnchors } from 'react-scrollable-anchor';
 
 import cls from './LandingPage.module.css';
 
+configureAnchors({ scrollDuration: 600 });
+
 class LandingPage extends Component {
-        state = {
-                hideArrow: true
-        };
-
-        toggleHover = () => {
-                let hide = this.state.hideArrow;
-                this.setState({ hideArrow: !hide });
-        };
-
         render() {
                 let arrowClass = null;
-                if (this.state.hideArrow) {
+                if (this.props.hideArrow) {
                         arrowClass = cls.hideNextSectionArrow;
                 } else {
                         arrowClass = cls.showNextSectionArrow;
                 }
                 return (
-                        <ScrollableAnchor id="landingPage">
-                                <div className={cls.LoadingPageContainer}>
+                        <ScrollableAnchor id="landingPageScrollContainer">
+                                <div className={cls.LandingPageContainer}>
                                         <div className={cls.myInfoContainer}>
                                                 <h1 className={cls.myName}>Logan Wood</h1>
                                                 <a
-                                                        href={'#aboutPage'}
+                                                        href={'#aboutPageScrollContainer'}
                                                         className={cls.myDescription}
-                                                        onMouseEnter={this.toggleHover}
-                                                        onMouseLeave={this.toggleHover}
+                                                        onMouseEnter={this.props.toggleHover}
+                                                        onMouseLeave={this.props.toggleHover}
                                                 >
                                                         Educator - Developer - Problem Solver
                                                 </a>
