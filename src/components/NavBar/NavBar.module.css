@@ -1,20 +1,37 @@
-.NavBarHide {
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 1s, opacity 0.5s linear;
-}
-
-.NavBarShow {
-        background-color: gray;
+.NavBarContainer {
+        background-color: #b2ebf2;
+        height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-content: center;
         text-align: center;
+        font-weight: 500;
+        /* box-shadow: 0 0 20px 10px #b2ebf2; */
+}
+
+.NavBarHide {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.75s, opacity 0.25s linear;
+}
+
+.NavBarShow {
         visibility: visible;
         opacity: 1;
-        transition: 1.75s;
+        transition: 1.25s;
 }
 
 .NavButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 2px 5px;
+        width: 25vw;
+}
+
+.NavButton:hover {
+        background-color: #0288d1;
+        color: #b3e5fc;
+        cursor: pointer;
 }

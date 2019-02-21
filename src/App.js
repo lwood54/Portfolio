@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import LandingPage from './components/LandingPage/LandingPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import NavBar from './components/NavBar/NavBar';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 import cls from './App.module.css';
 
@@ -14,12 +16,21 @@ class App extends Component {
 
         toggleHover = () => {
                 let hide = this.state.hideArrow;
-                this.setState({
-                        hideArrow: !hide
-                });
+                this.setState({ hideArrow: !hide });
+        };
+        toggleNav = () => {
+                let navShow = this.state.showNavBar;
+                this.setState({ showNavBar: !navShow });
         };
         componentDidMount() {
-                window.scrollTo(0, 125);
+                window.scroll(0, 0);
+                window.onscroll = () => {
+                        if (window.scrollY >= 520) {
+                                this.setState({ showNavBar: true });
+                        } else if (window.scrollY <= 400) {
+                                this.setState({ showNavBar: false });
+                        }
+                };
         }
 
         render() {
@@ -30,9 +41,12 @@ class App extends Component {
                                 </div>
                                 <LandingPage
                                         toggleHover={this.toggleHover}
+                                        toggleNav={this.toggleNav}
                                         hideArrow={this.state.hideArrow}
                                 />
                                 <AboutPage />
+                                <Projects />
+                                <Contact />
                         </div>
                 );
         }

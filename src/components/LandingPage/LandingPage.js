@@ -6,7 +6,7 @@ import { configureAnchors } from 'react-scrollable-anchor';
 
 import cls from './LandingPage.module.css';
 
-configureAnchors({ scrollDuration: 600 });
+configureAnchors({ scrollDuration: 500 });
 
 class LandingPage extends Component {
         render() {
@@ -26,6 +26,7 @@ class LandingPage extends Component {
                                                         className={cls.myDescription}
                                                         onMouseEnter={this.props.toggleHover}
                                                         onMouseLeave={this.props.toggleHover}
+                                                        onClick={this.props.toggleNav}
                                                 >
                                                         Educator - Developer - Problem Solver
                                                 </a>
