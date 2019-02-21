@@ -1,4 +1,28 @@
 .aboutPageContainer {
-        height: 100vh;
-        padding-top: 65px;
+	background-color: #e0f2f1;
+	min-height: 100vh;
+	padding-top: 65px;
+}
+
+.ImageContainer {
+	max-width: 85vw;
+	max-height: 50vh;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.Image {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto auto auto;
+	border-radius: 50%;
+}
+
+/*************************** MEDIA QUERIES ***********************/
+@media (min-width: 550px) {
+	.ImageContainer {
+		max-width: 25vw;
+	}
 }

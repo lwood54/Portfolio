@@ -1,29 +1,32 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import ScrollableAnchor from "react-scrollable-anchor";
+import { configureAnchors } from "react-scrollable-anchor";
 
-import cls from './AboutPage.module.css';
+import cls from "./AboutPage.module.css";
+import me_and_fam from "./images/me_and_fam.JPG";
 
 configureAnchors({ scrollDuration: 600 });
 
 export class AboutPage extends Component {
-        componentDidMount() {
-                var n = ReactDOM.findDOMNode(this);
-                // possible to use createRef
-                console.log('offsetTop: ', n.getBoundingClientRect().bottom);
-        }
-
-        render() {
-                return (
-                        <ScrollableAnchor id="aboutPageScrollContainer">
-                                <div className={cls.aboutPageContainer}>
-                                        <h1>About Logan Wood</h1>
-                                        <h3>More stuff about me</h3>
-                                </div>
-                        </ScrollableAnchor>
-                );
-        }
+	render() {
+		return (
+			<ScrollableAnchor id="aboutPageScrollContainer">
+				<div className={cls.aboutPageContainer}>
+					<div className={cls.ImageContainer}>
+						<img
+							src={me_and_fam}
+							alt="me and family"
+							className={cls.Image}
+						/>
+					</div>
+					<div className={cls.traits}>CLEAN</div>
+					<div className={cls.traits}>RESPONSIVE</div>
+					<div className={cls.traits}>ACCESSIBLE</div>
+				</div>
+			</ScrollableAnchor>
+		);
+	}
 }
 
 export default AboutPage;

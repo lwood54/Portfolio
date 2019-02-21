@@ -1,94 +1,90 @@
 .LandingPageContainer {
-        background-color: #b2ebf2;
-}
-
-a {
-        text-decoration: none;
+	background-color: #b2ebf2;
 }
 
 .myInfoContainer {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .myName {
-        font-size: 2.2rem;
-        color: #424242;
-        margin-bottom: 10px;
+	font-size: 2.2rem;
+	color: #424242;
+	margin-bottom: 10px;
 }
 
 .myDescription {
-        width: 85vw;
-        height: 75px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        border-radius: 5px;
-        border: 2px solid #0288d1;
-        transition: 0.75s;
+	width: 90vw;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 2px solid #0288d1;
+	transition: 0.75s;
 }
 
 .myDescription:hover {
-        background-color: #0288d1;
-        color: #b3e5fc;
-        cursor: pointer;
-        transition: 0.75s;
+	background-color: #0288d1;
+	color: #b3e5fc;
+	cursor: pointer;
+	transition: 0.75s;
 }
 
 .nextSectionArrowContainer {
-        height: 50px;
-        width: 100%;
-        margin-top: 30vh;
+	height: 50px;
+	width: 100%;
+	margin-top: 30vh;
 }
 
 .hideNextSectionArrow {
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 1s, opacity 0.5s linear;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 0.5s linear;
 }
 
 .showNextSectionArrow {
-        visibility: visible;
-        opacity: 1;
-        transition: 1.75s;
+	visibility: visible;
+	opacity: 1;
+	transition: 1.75s;
 }
 
 .arrowDown {
-        color: #424242;
-        font-size: 2.5rem;
+	color: #424242;
+	font-size: 2.5rem;
 }
 
 /********* MEDIA QUERIES *********************/
 
 @media (min-width: 550px) {
-        .myDescription {
-                width: 60vw;
-        }
+	.myDescription {
+		width: 60vw;
+	}
 }
 
 @media (min-width: 750px) {
-        .myDescription {
-                width: 50vw;
-        }
+	.myDescription {
+		width: 50vw;
+	}
 }
 
 @media (min-width: 1100px) {
-        .myInfoContainer {
-        }
+	.myInfoContainer {
+	}
 
-        .myName {
-                font-size: 3.5rem;
-        }
+	.myName {
+		font-size: 3.5rem;
+	}
 
-        .myDescription {
-                width: 30vw;
-        }
+	.myDescription {
+		width: 30vw;
+	}
 
-        .nextSectionArrowContainer {
-        }
+	.nextSectionArrowContainer {
+	}
 }
