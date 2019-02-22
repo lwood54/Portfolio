@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
 
@@ -20,9 +23,41 @@ export class AboutPage extends Component {
 							className={cls.Image}
 						/>
 					</div>
-					<div className={cls.traits}>CLEAN</div>
-					<div className={cls.traits}>RESPONSIVE</div>
-					<div className={cls.traits}>ACCESSIBLE</div>
+					<div className={cls.TraitsContainer}>
+						<div className={cls.Traits}>
+							<h3 className={cls.TraitTitle}>CLEAN</h3>
+							<FontAwesomeIcon
+								icon={faCode}
+								className={cls.codeSymbol}
+							/>
+							<p className={cls.traitDescription}>
+								I try to maintain clean code and to make
+								clean, uncluttered websites.
+							</p>
+						</div>
+						<div className={cls.Traits}>
+							<h3 className={cls.TraitTitle}>RESPONSIVE</h3>
+							<FontAwesomeIcon
+								icon={faMobileAlt}
+								className={cls.codeSymbol}
+							/>
+							<p className={cls.traitDescription}>
+								I feel it's important to have responsive
+								websites and to be a responsive team member.
+							</p>
+						</div>
+						<div className={cls.Traits}>
+							<h3 className={cls.TraitTitle}>ACCESSIBLE</h3>
+							<FontAwesomeIcon
+								icon={faCodeBranch}
+								className={cls.codeSymbol}
+							/>
+							<p className={cls.traitDescription}>
+								I believe websites should be logical, easy to
+								use, and accessible.
+							</p>
+						</div>
+					</div>
 				</div>
 			</ScrollableAnchor>
 		);

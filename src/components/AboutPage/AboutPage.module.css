@@ -1,28 +1,115 @@
 .aboutPageContainer {
-	background-color: #e0f2f1;
+	background-color: #fafafa;
 	min-height: 100vh;
 	padding-top: 65px;
 }
 
 .ImageContainer {
-	max-width: 85vw;
-	max-height: 50vh;
+	width: 100%;
+	max-height: 250px;
 	text-align: center;
 	display: inline-flex;
 	justify-content: center;
 	align-content: center;
+	transition: 1s;
 }
 
 .Image {
-	max-width: 100%;
-	max-height: 100%;
-	margin: 0 auto auto auto;
+	max-width: 55%;
+	max-height: 55%;
+	margin: auto;
 	border-radius: 50%;
 }
 
+.TraitsContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	box-sizing: border-box;
+	/* border: 2px solid red; */
+	transition: 1s;
+}
+
+.Traits {
+	height: 250px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	text-align: center;
+	margin: auto auto 10px auto;
+	background-color: #b2ebf2;
+	/* border: 2px solid blue; */
+	box-sizing: border-box;
+}
+
+.Traits:hover {
+	background-color: #80deea;
+	color: #212121;
+}
+
+.TraitTitle {
+	margin-top: 15px;
+	color: #424242;
+	font-weight: 500;
+}
+
+.codeSymbol {
+	font-size: 2rem;
+	color: #424242;
+	margin: 15px auto;
+}
+
+.traitDescription {
+	padding: 15px;
+}
+
 /*************************** MEDIA QUERIES ***********************/
-@media (min-width: 550px) {
+@media (min-width: 450px) {
+	.Image {
+		max-width: 200px;
+		max-height: 200px;
+	}
+}
+
+@media (min-width: 600px) {
 	.ImageContainer {
-		max-width: 25vw;
+		float: left;
+		width: 45%;
+		max-height: 750px;
+		height: 750px;
+	}
+
+	.TraitsContainer {
+		width: 45%;
+	}
+}
+
+@media (min-width: 770px) {
+	.ImageContainer {
+		float: none;
+		width: 100%;
+		max-height: 250px;
+	}
+	.TraitsContainer {
+		flex-direction: row;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.ImageContainer {
+		max-width: 25%;
+		margin: auto;
+		flex-direction: row;
+		float: left;
+	}
+
+	.TraitsContainer {
+		flex-direction: row;
+		width: 75%;
 	}
 }
