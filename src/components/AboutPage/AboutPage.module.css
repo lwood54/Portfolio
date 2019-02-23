@@ -1,115 +1,227 @@
 .aboutPageContainer {
-	background-color: #fafafa;
-	min-height: 100vh;
-	padding-top: 65px;
+        background-color: #fafafa;
+        min-height: 100vh;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+}
+
+.AboutTitle {
+        padding: 0 20px;
+}
+
+.AboutParagraph {
+        padding: 20px;
+        padding-top: 0;
+        font-weight: 500;
+        text-align: left;
+}
+
+.PersonalInfoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        /* border: 2px solid blue; */
+}
+
+.PersonalGrouping {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
 }
 
 .ImageContainer {
-	width: 100%;
-	max-height: 250px;
-	text-align: center;
-	display: inline-flex;
-	justify-content: center;
-	align-content: center;
-	transition: 1s;
+        width: 100%;
+        max-height: 300px;
+        margin-bottom: 25px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        transition: 1s;
 }
 
 .Image {
-	max-width: 55%;
-	max-height: 55%;
-	margin: auto;
-	border-radius: 50%;
+        max-width: 55%;
+        max-height: 55%;
+        margin: auto;
+        border-radius: 3px;
 }
 
 .TraitsContainer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	box-sizing: border-box;
-	/* border: 2px solid red; */
-	transition: 1s;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        box-sizing: border-box;
+        /* border: 2px solid red; */
+        transition: 1s;
 }
 
 .Traits {
-	height: 250px;
-	width: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: center;
-	text-align: center;
-	margin: auto auto 10px auto;
-	background-color: #b2ebf2;
-	/* border: 2px solid blue; */
-	box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        margin: auto auto 10px auto;
+        background-color: #b2ebf2;
+        /* border: 2px solid blue; */
+        box-sizing: border-box;
 }
 
-.Traits:hover {
-	background-color: #80deea;
-	color: #212121;
-}
+/* .Traits:hover {
+        background-color: #80deea;
+        color: #212121;
+} */
 
 .TraitTitle {
-	margin-top: 15px;
-	color: #424242;
-	font-weight: 500;
+        margin-top: 15px;
+        color: #424242;
+        font-weight: 700;
 }
 
-.codeSymbol {
-	font-size: 2rem;
-	color: #424242;
-	margin: 15px auto;
+.faSymbol {
+        font-size: 3.25rem;
+        color: #424242;
+        margin: 15px auto;
 }
 
 .traitDescription {
-	padding: 15px;
+        padding: 15px;
+}
+
+.ToolsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        text-align: center;
+}
+
+.Tools {
+        width: 15%;
+        height: 100px;
+        margin: 15px;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+}
+
+.ToolsImage {
+        max-height: 50px;
+        max-width: 50px;
+        margin: auto;
+}
+
+.ReactTitle {
+        width: 100%;
+        margin-top: 15px;
 }
 
 /*************************** MEDIA QUERIES ***********************/
 @media (min-width: 450px) {
-	.Image {
-		max-width: 200px;
-		max-height: 200px;
-	}
+        .Image {
+                max-width: 200px;
+                max-height: 200px;
+        }
 }
 
 @media (min-width: 600px) {
-	.ImageContainer {
-		float: left;
-		width: 45%;
-		max-height: 750px;
-		height: 750px;
-	}
+        .PersonalInfoContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+                text-align: center;
+                padding: 15px;
+        }
 
-	.TraitsContainer {
-		width: 45%;
-	}
+        .ImageContainer {
+                margin: auto;
+        }
+
+        .TraitsContainer {
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 5px;
+        }
+
+        .Traits {
+                margin-bottom: 60px;
+        }
+        .Tools {
+                margin-top: 0;
+        }
 }
 
 @media (min-width: 770px) {
-	.ImageContainer {
-		float: none;
-		width: 100%;
-		max-height: 250px;
-	}
-	.TraitsContainer {
-		flex-direction: row;
-		width: 100%;
-	}
+        .ImageContainer {
+                float: none;
+                width: 100%;
+                max-height: 250px;
+        }
+        .TraitsContainer {
+                flex-direction: row;
+                width: 100%;
+        }
+        .Tools {
+                width: 20%;
+        }
+        .ToolsImage {
+                max-height: 80px;
+                max-width: 80px;
+        }
 }
 
-@media (min-width: 1025px) {
-	.ImageContainer {
-		max-width: 25%;
-		margin: auto;
-		flex-direction: row;
-		float: left;
-	}
+@media (min-width: 1020px) {
+        .PersonalInfoContainer {
+                padding: 0;
+        }
+        .PersonalGrouping {
+                text-align: left;
+                padding: 35px;
+                padding-left: 10px;
+                font-size: 1.5rem;
+        }
 
-	.TraitsContainer {
-		flex-direction: row;
-		width: 75%;
-	}
+        .AboutParagraph {
+                padding-bottom: 20px;
+        }
+
+        .ImageContainer {
+                width: 65%;
+        }
+        .Image {
+                max-width: 300px;
+                max-height: 300px;
+        }
+
+        .Tools {
+                width: 5%;
+        }
+        .ToolsImage {
+                max-height: 50px;
+                max-width: 50px;
+        }
+
+        .TraitsContainer {
+                margin-top: 0;
+        }
+
+        .Traits {
+                margin: 25px;
+        }
 }
