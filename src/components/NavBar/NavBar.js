@@ -8,7 +8,6 @@ export class NavBar extends Component {
                 if (this.props.showNavBar) {
                         NavBarVisibility = cls.NavBarShow;
                 }
-
                 return (
                         <div className={[NavBarVisibility, cls.NavBarContainer].join(' ')}>
                                 <a href={'#landing'} className={cls.NavButton}>
@@ -17,7 +16,7 @@ export class NavBar extends Component {
                                 <a
                                         href={'#about'}
                                         className={
-                                                this.props.currentPage === 'AboutPageScrollContainer'
+                                                this.props.currentPage === 'about'
                                                         ? [cls.NavButton, cls.ActivePageButton].join(' ')
                                                         : cls.NavButton
                                         }
@@ -27,7 +26,7 @@ export class NavBar extends Component {
                                 <a
                                         href={'#projects'}
                                         className={
-                                                this.props.currentPage === 'ProjectsScrollContainer'
+                                                this.props.currentPage === 'projects'
                                                         ? [cls.NavButton, cls.ActivePageButton].join(' ')
                                                         : cls.NavButton
                                         }
@@ -37,7 +36,7 @@ export class NavBar extends Component {
                                 <a
                                         href={'#contact'}
                                         className={
-                                                this.props.currentPage === 'ContactScrollContainer'
+                                                this.props.currentPage === 'contact'
                                                         ? [cls.NavButton, cls.ActivePageButton].join(' ')
                                                         : cls.NavButton
                                         }
