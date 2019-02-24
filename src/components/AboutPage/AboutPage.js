@@ -17,12 +17,12 @@ import Material_UI from './images/material_ui.png';
 import GitHub from './images/GitHub.svg';
 import Photoshop from './images/Photoshop.png';
 
-configureAnchors({ scrollDuration: 600 });
+configureAnchors({ scrollDuration: 500 });
 
 export class AboutPage extends Component {
         render() {
                 return (
-                        <ScrollableAnchor id="aboutPageScrollContainer">
+                        <ScrollableAnchor id="about">
                                 <div className={cls.aboutPageContainer}>
                                         <div className={cls.PersonalInfoContainer}>
                                                 <div className={cls.ImageContainer}>

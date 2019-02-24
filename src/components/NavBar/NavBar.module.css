@@ -34,3 +34,10 @@
         color: #b3e5fc;
         cursor: pointer;
 }
+
+.ActivePageButton {
+        color: #060111;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 5px 1px -4px rgb(11, 55, 177);
+}

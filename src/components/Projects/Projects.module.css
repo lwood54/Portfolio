@@ -1,5 +1,10 @@
 .ProjectsContainer {
-	height: 100vh;
-	padding-top: 65px;
-	background-color: #b2ebf2;
+        height: 100vh;
+        padding-top: 65px;
+        background-color: #b2ebf2;
+}
+
+.Image {
+        max-width: 100px;
+        max-height: 100px;
 }

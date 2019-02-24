@@ -17,12 +17,12 @@ class LandingPage extends Component {
                         arrowClass = cls.showNextSectionArrow;
                 }
                 return (
-                        <ScrollableAnchor id="landingPageScrollContainer">
+                        <ScrollableAnchor id="landing">
                                 <div className={cls.LandingPageContainer}>
                                         <div className={cls.myInfoContainer}>
                                                 <h1 className={cls.myName}>Logan Wood</h1>
                                                 <a
-                                                        href={'#aboutPageScrollContainer'}
+                                                        href={'#about'}
                                                         className={cls.myDescription}
                                                         onMouseEnter={this.props.toggleHover}
                                                         onMouseLeave={this.props.toggleHover}
