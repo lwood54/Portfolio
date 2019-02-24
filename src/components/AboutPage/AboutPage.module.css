@@ -164,6 +164,7 @@
         }
         .Tools {
                 margin-top: 0;
+                width: 20%;
         }
 }
 
@@ -177,9 +178,7 @@
                 flex-direction: row;
                 width: 100%;
         }
-        .Tools {
-                width: 20%;
-        }
+
         .ToolsImage {
                 max-height: 80px;
                 max-width: 80px;
@@ -194,7 +193,7 @@
                 text-align: left;
                 padding: 35px;
                 padding-left: 10px;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
         }
 
         .AboutParagraph {
