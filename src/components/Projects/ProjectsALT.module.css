@@ -1,0 +1,50 @@
+.ProjectsSectionContainer {
+        height: 90vh;
+        max-width: 100vw;
+        padding-top: 65px;
+        background-color: #b2ebf2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+}
+
+.ProjectDisplayContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 500px;
+        width: 500px;
+}
+
+.SliderContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+}
+
+.Image {
+        max-width: 450px;
+        max-height: 450px;
+}
+
+.SliderButtonsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+}
+
+.SliderNavButton {
+        height: 50px;
+        width: 125px;
+        cursor: pointer;
+        margin: 0 40px;
+        border-radius: 4px;
+}

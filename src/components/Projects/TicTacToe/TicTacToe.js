@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import cls from './TicTacToe.module.css';
+// import cls from './TicTacToe.module.css';
 
 const TicTacToe = props => {
         return (

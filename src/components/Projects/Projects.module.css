@@ -1,10 +1,74 @@
-.ProjectsContainer {
-        height: 100vh;
+.ProjectsSectionContainer {
+        height: 90vh;
+        max-width: 100vw;
         padding-top: 65px;
         background-color: #b2ebf2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+}
+
+.ProjectDisplayContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 500px;
+        width: 500px;
+}
+
+.SliderContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
 }
 
 .Image {
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 450px;
+        max-height: 450px;
+}
+
+.ImageMoveLeft {
+        max-width: 250px;
+        max-height: 250px;
+        /* transform: skewX(25deg) skewY(10deg); */
+        /* transform: translate(-200px); */ /*this sets initial placement, whereas doing it with keyframs animates INTO final spot*/
+        animation: moveLeft 2s;
+}
+
+/*use this to change the class of the prevProject to move left on click, then it will slide into it's spot.
+At the same time, we can have the nextProject change to displayProject and animate to the middle,
+then we can have index position 2, which is not showing, can then animate into nextProject position */
+
+/*
+you can reuse the keyfram function crated
+*/
+@keyframes moveLeft {
+        0% {
+                transform: translate(200px);
+        }
+        25% {
+                transform: translateY(200px);
+        }
+}
+
+.SliderButtonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 50px;
+}
+
+.SliderNavButton {
+        height: 150px;
+        width: 35px;
+        cursor: pointer;
+        margin: auto;
+        animation: moveLeft 3s;
 }

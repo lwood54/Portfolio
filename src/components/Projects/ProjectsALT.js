@@ -21,7 +21,7 @@ let projects = [
                 <img src={science_site} alt="Mr Wood's Science Page" className={cls.Image} />
         </a>,
         <a href="https://lwood-science.herokuapp.com/unit4_2/game4_2" target="blank">
-                <img src={review_game} alt="review game" className={cls.ImageMoveLeft} />
+                <img src={review_game} alt="review game" className={cls.Image} />
         </a>,
         <a href="https://codepen.io/lwood54/full/ZxgMKp" target="blank">
                 <img src={simonImg} alt="simon game" className={cls.Image} />
@@ -70,32 +70,29 @@ class Projects extends Component {
                         <ScrollableAnchor id="projects">
                                 <div className={cls.ProjectsSectionContainer}>
                                         <div className={cls.SliderContainer}>
-                                                <div className={cls.SliderButtonContainer}>
-                                                        <button
-                                                                onClick={this.prevProjectHandler}
-                                                                className={cls.SliderNavButton}
-                                                        >
-                                                                <FontAwesomeIcon
-                                                                        icon={faChevronLeft}
-                                                                        className={cls.arrowLeft}
-                                                                />
-                                                        </button>
-                                                </div>
-
                                                 <div className={cls.ProjectDisplayContainer}>
                                                         {this.state.projectArray[0]}
                                                 </div>
-                                                <div className={cls.SliderButtonContainer}>
-                                                        <button
-                                                                onClick={this.nextProjectHandler}
-                                                                className={cls.SliderNavButton}
-                                                        >
-                                                                <FontAwesomeIcon
-                                                                        icon={faChevronRight}
-                                                                        className={cls.arrowLeft}
-                                                                />
-                                                        </button>
-                                                </div>
+                                        </div>
+                                        <div className={cls.SliderButtonsContainer}>
+                                                <button
+                                                        onClick={this.prevProjectHandler}
+                                                        className={cls.SliderNavButton}
+                                                >
+                                                        <FontAwesomeIcon
+                                                                icon={faChevronLeft}
+                                                                className={cls.arrowLeft}
+                                                        />
+                                                </button>
+                                                <button
+                                                        onClick={this.nextProjectHandler}
+                                                        className={cls.SliderNavButton}
+                                                >
+                                                        <FontAwesomeIcon
+                                                                icon={faChevronRight}
+                                                                className={cls.arrowLeft}
+                                                        />
+                                                </button>
                                         </div>
                                 </div>
                         </ScrollableAnchor>
