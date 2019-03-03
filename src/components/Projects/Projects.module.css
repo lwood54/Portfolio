@@ -16,7 +16,7 @@
         justify-content: center;
         align-content: center;
         margin: 0;
-        border: 2px solid orange;
+        /* border: 2px solid orange; */
 }
 
 .ProjectDisplayContainer {
@@ -37,17 +37,14 @@
         border-radius: 3px;
 }
 
-.projDispLeft,
+/* .projDispLeft,
 .projDispRight {
-        /* transform: skewX(25deg) skewY(10deg); */
-        /* transform: translate(-200px); */ /*this sets initial placement, whereas doing it with keyframs animates INTO final spot*/
-        /* animation: moveLeft 2s; */
         transform: scale(0.75, 0.75);
         transition: 1s;
-}
+} */
 
 .projDispLeft {
-        animation: moveLeft 2s;
+        animation: moveLeft;
 }
 
 .moveLeft {
@@ -68,13 +65,125 @@ then we can have index position 2, which is not showing, can then animate into n
 /*
 you can reuse the keyfram function crated
 */
-@keyframes moveLeft {
-        0% {
-                transform: translate(200px);
+/*************** MOVEMENT SHIFT FROM RIGHT TO LEFT *****************/
+@keyframes moveCenterToLeft {
+        from {
+                transform: translate(500px) scale(1, 1);
+                opacity: 1;
         }
-        25% {
-                transform: translate(0px);
+        to {
+                transform: translate(0px) scale(0.5, 0.5);
+                opacity: 0.75;
         }
+}
+
+@keyframes moveRightToCenter {
+        from {
+                transform: translate(500px) scale(0.5, 0.5);
+                opacity: 0.5;
+        }
+        to {
+                transform: translate(0px) scale(1, 1);
+                opacity: 0.75;
+        }
+}
+@keyframes moveInToRight {
+        from {
+                transform: translate(500px) scale(0.25, 0.25);
+                opacity: 0;
+        }
+        to {
+                transform: translate(0px) scale(0.5, 0.5);
+                opacity: 0.5;
+        }
+}
+
+.MoveCenterToLeft {
+        -webkit-animation: moveCenterToLeft 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveCenterToLeft 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 0.5;
+        transform: scale(0.5, 0.5);
+}
+
+.MoveRightToCenter {
+        -webkit-animation: moveRightToCenter 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveRightToCenter 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+        transform: scale(1, 1);
+}
+
+.MoveInToRight {
+        -webkit-animation: moveInToRight 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveInToRight 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 0.5;
+        transform: scale(0.5, 0.5);
+}
+
+/**************** MOVEMENT SHIFT FROM LEFT TO RIGHT ***************/
+@keyframes moveInToLeft {
+        from {
+                transform: translate(-500px) scale(0.25, 0.25);
+                opacity: 0;
+        }
+        to {
+                transform: translate(0px) scale(0.5, 0.5);
+                opacity: 0.5;
+        }
+}
+
+.MoveInToLeft {
+        -webkit-animation: moveInToLeft 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveInToLeft 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 0.5;
+        transform: scale(0.5, 0.5);
+}
+
+@keyframes moveLeftToCenter {
+        from {
+                transform: translate(-500px) scale(0.5, 0.5);
+                opacity: 0.5;
+        }
+        to {
+                transform: translate(0px) scale(1, 1);
+                opacity: 0.75;
+        }
+}
+
+.MoveLeftToCenter {
+        -webkit-animation: moveLeftToCenter 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveLeftToCenter 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+        transform: scale(1, 1);
+}
+
+@keyframes moveCenterToRight {
+        from {
+                transform: translate(-500px) scale(1, 1);
+                opacity: 1;
+        }
+        to {
+                transform: translate(0px) scale(0.5, 0.5);
+                opacity: 0.5;
+        }
+}
+
+.MoveCenterToRight {
+        -webkit-animation: moveCenterToRight 500ms ease-in-out; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
+        animation: moveCenterToRight 500ms;
+        animation-timing-function: ease-in-out;
+        opacity: 0.5;
+        transform: scale(0.5, 0.5);
 }
 
 .LeftSliderButtonContainer,

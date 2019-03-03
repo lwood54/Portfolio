@@ -17,7 +17,7 @@ import simple_chat from './images/simple_chat_app.png';
 import expensify from './images/expensify.png';
 
 let projects = [
-        <a href="https://lwood-science.herokuapp.com/" target="blank" className={cls.Button}>
+        <a href="https://lwood-science.herokuapp.com/" target="blank" className={cls.Button} key="0">
                 <img src={science_site} alt="Mr Wood's Science Page" className={cls.Image} />
         </a>,
         <a href="https://lwood-science.herokuapp.com/unit4_2/game4_2" target="blank">
@@ -46,45 +46,111 @@ let projects = [
         </a>
 ];
 
-const style = {
-        borderRadius: '25%',
-        border: '2px solid red'
-};
-
 class Projects extends Component {
         state = {
-                projectArray: projects
+                projectArray: []
         };
 
-        practiceRef = React.createRef();
+        // practiceRef = React.createRef();
+        // you can access a DOM element by ref={this.practiceRef}
+
+        componentDidMount() {
+                let initialProjList = projects.map((project, i) => {
+                        if (i === this.state.projectArray.length - 1) {
+                                return (
+                                        // There is probably a better way to do this, but the random number ensures that
+                                        // the key is changed, which triggers the Virtual DOM to know that there has been
+                                        // a change, so the classes will update and the animations will take effect
+                                        <div className={cls.MoveCenterToLeft} key={Math.random() * 8}>
+                                                {project}
+                                        </div>
+                                );
+                        } else if (i === 0) {
+                                return (
+                                        <div className={cls.MoveRightToCenter} key={Math.random() * 8}>
+                                                {project}
+                                        </div>
+                                );
+                        } else {
+                                return (
+                                        <div className={cls.MoveInToRight} key={Math.random() * 8}>
+                                                {project}
+                                        </div>
+                                );
+                        }
+                });
+                this.setState({ projectArray: initialProjList });
+        }
 
         nextProjectHandler = () => {
                 let prevProjOrder = [...this.state.projectArray];
-                this.practiceRef.current.style.animation = 'moveLeft 2s ease';
-                this.practiceRef.current.style.border = '2px solid green';
-                console.log(this.practiceRef.current.style);
-                let displayProject = prevProjOrder.splice(0, 1);
+                let displayProject = prevProjOrder.splice(0, 1)[0];
                 prevProjOrder.push(displayProject);
+                let newProjList = prevProjOrder.map((proj, i) => {
+                        if (i === prevProjOrder.length - 1) {
+                                return (
+                                        <div className={cls.MoveCenterToLeft} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        } else if (i === 0) {
+                                return (
+                                        <div className={cls.MoveRightToCenter} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        } else {
+                                return (
+                                        <div className={cls.MoveInToRight} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        }
+                });
+
                 this.setState({
-                        projectArray: prevProjOrder
+                        projectArray: newProjList
                 });
         };
 
         prevProjectHandler = () => {
                 let prevProjOrder = [...this.state.projectArray];
-                let displayProject = prevProjOrder.splice(prevProjOrder.length - 1, 1);
+                let displayProject = prevProjOrder.splice(prevProjOrder.length - 1, 1)[0];
                 prevProjOrder.unshift(displayProject);
-                this.setState({ projectArray: prevProjOrder });
+                let newProjList = prevProjOrder.map((proj, i) => {
+                        if (i === prevProjOrder.length - 1) {
+                                return (
+                                        <div className={cls.MoveInToLeft} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        } else if (i === 0) {
+                                return (
+                                        <div className={cls.MoveLeftToCenter} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        } else {
+                                return (
+                                        <div className={cls.MoveCenterToRight} key={Math.random() * 8}>
+                                                {proj.props.children}
+                                        </div>
+                                );
+                        }
+                });
+                this.setState({
+                        projectArray: newProjList
+                });
+        };
+
+        handleAnimate = () => {
+                console.log('animating', this.practiceRef.current.attributes);
+                // this.practiceRef.current.className = 'Animated';
+                this.practiceRef.current.key = '2';
+                console.log('changed: ', this.practiceRef.current.children);
         };
 
         render() {
-                const projectList = this.state.projectArray.map((project, i) => {
-                        if (i === this.state.projectArray.length - 1) {
-                                return <div ref={this.practiceRef}>{project}</div>;
-                        } else {
-                                return <div>{project}</div>;
-                        }
-                });
                 const leftButton = (
                         <div className={cls.LeftSliderButtonContainer}>
                                 <button onClick={this.prevProjectHandler} className={cls.SliderNavButton}>
@@ -108,15 +174,20 @@ class Projects extends Component {
                                                                 className={cls.projDispLeft}
                                                                 ref={this.practiceRef}
                                                         >
-                                                                {projectList[projectList.length - 1]}
+                                                                {
+                                                                        this.state.projectArray[
+                                                                                this.state.projectArray
+                                                                                        .length - 1
+                                                                        ]
+                                                                }
                                                         </div>
                                                         {leftButton}
                                                         <div className={cls.projDispCenter}>
-                                                                {projectList[0]}
+                                                                {this.state.projectArray[0]}
                                                         </div>
                                                         {rightButton}
                                                         <div className={cls.projDispRight}>
-                                                                {projectList[1]}
+                                                                {this.state.projectArray[1]}
                                                         </div>
                                                 </div>
                                         </div>

@@ -51,8 +51,6 @@ class Home extends Component {
                                         });
                                         break;
                                 default:
-                                        console.log('componentDidUpdate: switch - default');
-                                        console.log('default, activePage: ', activePage);
                                         this.setState({
                                                 currentActivePage: activePage,
                                                 showNavBar: true
