@@ -24,7 +24,6 @@ class Home extends Component {
                 this.setState({ showNavBar: !navShow });
         };
         componentDidMount() {
-                console.log('component did mount');
                 window.scroll(0, 0);
                 if (window.location.href !== undefined || window.location.href !== 'landing') {
                         this.setState({ showNavBar: true });
