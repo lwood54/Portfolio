@@ -181,11 +181,13 @@ class Projects extends Component {
                                                                         ]
                                                                 }
                                                         </div>
-                                                        {leftButton}
+
                                                         <div className={cls.projDispCenter}>
+                                                                {leftButton}
                                                                 {this.state.projectArray[0]}
+                                                                {rightButton}
                                                         </div>
-                                                        {rightButton}
+
                                                         <div className={cls.projDispRight}>
                                                                 {this.state.projectArray[1]}
                                                         </div>
