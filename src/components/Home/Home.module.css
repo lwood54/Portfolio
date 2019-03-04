@@ -2,6 +2,7 @@
         width: 100%;
         height: 75px;
         position: fixed;
+        z-index: 150;
 }
 
 a {

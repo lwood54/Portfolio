@@ -16,6 +16,7 @@
         justify-content: center;
         align-content: center;
         margin: 0;
+        height: 90%;
         /* border: 2px solid orange; */
 }
 
@@ -25,7 +26,7 @@
         justify-content: center;
         align-content: center;
         text-align: center;
-        height: 500px;
+        height: 100%;
         width: 90%;
         position: relative;
         /* border: 2px solid green; */
@@ -62,7 +63,7 @@
         position: relative;
         min-width: 450px;
         width: 450px;
-        height: 450px;
+        height: 100%;
 }
 
 /*use this to change the class of the prevProject to move left on click, then it will slide into it's spot.
@@ -136,6 +137,66 @@ you can reuse the keyfram function crated
         border-radius: 5px;
 }
 
+.LeftSliderButtonContainer,
+.RightSliderButtonContainer {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 50px;
+        height: 150px;
+        /* border: 2px solid red; */
+        position: absolute;
+}
+
+.RightSliderButtonContainer {
+        right: -50px;
+}
+
+.arrowRight,
+.arrowLeft {
+        font-size: 3.5rem;
+}
+.LeftSliderButtonContainer {
+        left: -50px;
+}
+
+.SliderNavButton {
+        background: none;
+        border: none;
+        outline: none; /* get rid of default blue outline on click*/
+        width: 100%;
+        cursor: pointer;
+        margin: auto;
+        height: 80%;
+        transition: 0.35s;
+        border-radius: 3px;
+        /* animation: moveLeft 3s; */
+}
+
+.SliderNavButton:hover {
+        background: #03a9f4;
+        color: #e1f5fe;
+        transition: 0.25s;
+}
+
+.projTitle {
+        margin-bottom: 15px;
+        color: #424242;
+        animation: fadeUp 1s;
+}
+
+.projDescription {
+        text-align: justify;
+        color: #424242;
+        padding: 20px;
+        animation: fadeDown 1s;
+}
+
+/*********************************** ANIMATIONS START ***************************************/
+
 /**************** MOVEMENT SHIFT FROM LEFT TO RIGHT ***************/
 @keyframes moveInToLeft {
         from {
@@ -200,49 +261,7 @@ you can reuse the keyfram function crated
         border-radius: 5px;
 }
 
-.LeftSliderButtonContainer,
-.RightSliderButtonContainer {
-        display: flex;
-        flex-direction: column;
-        z-index: 10;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        width: 50px;
-        height: 50%;
-        /* border: 2px solid red; */
-        position: absolute;
-}
-
-.RightSliderButtonContainer {
-        right: -50px;
-}
-
-.arrowRight,
-.arrowLeft {
-        font-size: 3.5rem;
-}
-.LeftSliderButtonContainer {
-        left: -50px;
-}
-
-.SliderNavButton {
-        background: none;
-        border: none;
-        outline: none; /* get rid of default blue outline on click*/
-        width: 100%;
-        cursor: pointer;
-        margin: auto;
-        height: 80%;
-        transition: 0.35s;
-        /* animation: moveLeft 3s; */
-}
-
-.SliderNavButton:hover {
-        background: #03a9f4;
-        color: #e1f5fe;
-        transition: 0.25s;
-}
+/**************************************ANIMATIONS END **********************************/
 
 @media (max-width: 800px) {
         .RightSliderButtonContainer {
@@ -250,5 +269,10 @@ you can reuse the keyfram function crated
         }
         .LeftSliderButtonContainer {
                 left: 0px;
+        }
+
+        .projDispLeft,
+        .projDispRight {
+                display: none;
         }
 }
