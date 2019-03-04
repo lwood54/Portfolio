@@ -20,7 +20,7 @@ let projects = [
         {
                 title: '7th Grade Science Website',
                 description:
-                        'This was built with React, Express, and Material-UI. My students have access to all 7th grade science standards, 5 to 10 review questions for each state standard, an informational unit, and a drag and drop review game I created.',
+                        'This was built with React, Express, and Material-UI. My students have access to all 7th grade science standards. There is detailed content information for each of the 26 state standards. There are 5 to 10 interactive review questions for each state standard with immediate success feedback. There is also a drag and drop review game for each unit with score updates.',
                 jsx: (
                         <a
                                 href="https://lwood-science.herokuapp.com/"
@@ -35,7 +35,7 @@ let projects = [
         {
                 title: 'Science Review Game App',
                 description:
-                        'I created this Drag and Drop Review Game for my science students. This game was built with just React and CSS. There were no other libraries used in building this.',
+                        'I created this Drag and Drop Review Game for my science students. This game was built with just React and CSS. There were no other libraries used in building this app. Each game has 2 sections. The 2nd section can only be accessed with a high enough score.',
                 jsx: (
                         <a href="https://lwood-science.herokuapp.com/unit4_2/game4_2" target="blank">
                                 <img src={review_game} alt="review game" className={cls.Image} />
