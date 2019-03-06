@@ -1,43 +1,49 @@
 .NavBarContainer {
-        background-color: #b2ebf2;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-        text-align: center;
-        font-weight: 500;
-        /* box-shadow: 0 0 20px 10px #b2ebf2; */
+	background-color: #b2ebf2;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	text-align: center;
+	font-weight: 500;
+	/* box-shadow: 0 0 20px 10px #b2ebf2; */
 }
 
 .NavBarHide {
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0.75s, opacity 0.25s linear;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.75s, opacity 0.25s linear;
 }
 
 .NavBarShow {
-        visibility: visible;
-        opacity: 1;
-        transition: 1.25s;
+	visibility: visible;
+	opacity: 1;
+	transition: 1.25s;
 }
 
 .NavButton {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 25vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 25%;
 }
 
 .NavButton:hover {
-        background-color: #0288d1;
-        color: #b3e5fc;
-        cursor: pointer;
+	background-color: #0288d1;
+	color: #b3e5fc;
+	cursor: pointer;
 }
 
 .ActivePageButton {
-        color: #060111;
-        font-weight: 700;
-        cursor: pointer;
-        box-shadow: 0 5px 1px -4px rgb(11, 55, 177);
+	color: #060111;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 5px 1px -4px rgb(11, 55, 177);
+}
+
+@media (max-width: 450px) {
+	.NavButton {
+		font-size: 0.85rem;
+	}
 }
