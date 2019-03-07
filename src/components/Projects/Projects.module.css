@@ -264,6 +264,7 @@ you can reuse the keyfram function crated
 /**************************************ANIMATIONS END **********************************/
 /**************************************  MEDIA QUERIES **********************************/
 
+/* When window is 450px or less */
 @media (max-width: 450px) {
 	.DispProjContents {
 		box-sizing: border-box;
@@ -301,6 +302,7 @@ you can reuse the keyfram function crated
 	}
 }
 
+/* When window is 800px or less */
 @media (max-width: 800px) {
 	.RightSliderButtonContainer {
 		right: 0px;

@@ -5,7 +5,8 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import cls from "./Projects.module.css";
+// import cls from "./Projects.module.css";
+import cls from "./ProjectsALT.module.css";
 import simonImg from "./images/simon.png";
 import science_site from "./images/science_site.png";
 import tictactoe from "./images/tictactoe.png";
@@ -33,7 +34,7 @@ let projects = [
 		)
 	},
 	{
-		title: "Science Review Game App",
+		title: "Science Review Game",
 		description:
 			"I created this Drag and Drop Review Game for my science students. This game was built with just React and CSS. There were no other libraries used in building this app. Each game has 2 sections. The 2nd section can only be accessed with a high enough score.",
 		jsx: (
