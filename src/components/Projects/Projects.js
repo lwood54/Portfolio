@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 // import cls from "./Projects.module.css";
-import cls from "./ProjectsALT.module.css";
+import cls from "./Projects.module.css";
 import simonImg from "./images/simon.png";
 import science_site from "./images/science_site.png";
 import tictactoe from "./images/tictactoe.png";
@@ -261,12 +261,12 @@ class Projects extends Component {
 		});
 	};
 
-	handleAnimate = () => {
-		console.log("animating", this.practiceRef.current.attributes);
-		// this.practiceRef.current.className = 'Animated';
-		this.practiceRef.current.key = "2";
-		console.log("changed: ", this.practiceRef.current.children);
-	};
+	// handleAnimate = () => {
+	// 	console.log("animating", this.practiceRef.current.attributes);
+	// 	// this.practiceRef.current.className = 'Animated';
+	// 	this.practiceRef.current.key = "2";
+	// 	console.log("changed: ", this.practiceRef.current.children);
+	// };
 
 	render() {
 		const leftButton = (
@@ -299,13 +299,11 @@ class Projects extends Component {
 									]
 								}
 							</div>
-
+							{leftButton}
 							<div className={cls.projDispCenter}>
-								{leftButton}
 								{this.state.projectArray[0]}
-								{rightButton}
 							</div>
-
+							{rightButton}
 							<div className={cls.projDispRight}>
 								{this.state.projectArray[1]}
 							</div>
