@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/Home/Home';
-import TicTacToe from './components/Projects/TicTacToe/TicTacToe';
 
 // import cls from './App.module.css';
 
@@ -11,7 +10,6 @@ class App extends Component {
                 return (
                         <div className="App">
                                 <Switch>
-                                        <Route path="/tictactoe" exact component={TicTacToe} />
                                         <Route path="/" component={Home} />
                                 </Switch>
                         </div>
