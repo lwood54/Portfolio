@@ -96,9 +96,6 @@ const Projects = () => {
                         }
                 });
                 setProjectsArray(newProjList);
-                // this.setState({
-                // 	projectArray: newProjList
-                // });
         };
 
         const leftButton = (
