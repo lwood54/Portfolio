@@ -217,7 +217,7 @@ let initialProjList = projects.map((project, i) => {
                         >
                                 <h2 className={cls.projTitle}>{project.title}</h2>
                                 {project.jsx}
-                                <p className={cls.projDescription}>{project.description}</p>
+                                <div className={cls.projDescription}>{project.description}</div>
                         </div>
                 );
         } else if (i === 0) {
@@ -228,7 +228,7 @@ let initialProjList = projects.map((project, i) => {
                         >
                                 <h2 className={cls.projTitle}>{project.title}</h2>
                                 {project.jsx}
-                                <p className={cls.projDescription}>{project.description}</p>
+                                <div className={cls.projDescription}>{project.description}</div>
                         </div>
                 );
         } else {
@@ -239,7 +239,7 @@ let initialProjList = projects.map((project, i) => {
                         >
                                 <h2 className={cls.projTitle}>{project.title}</h2>
                                 {project.jsx}
-                                <p className={cls.projDescription}>{project.description}</p>
+                                <div className={cls.projDescription}>{project.description}</div>
                         </div>
                 );
         }
