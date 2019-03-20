@@ -31,19 +31,19 @@ const Contact = () => {
         const handleSubmit = async e => {
                 e.preventDefault();
                 console.log(name, 'submitted a message from ', company, 'saying: ', message);
-                await axios
-                        .post('/api/form', {
-                                name,
-                                email,
-                                company,
-                                message
-                        })
-                        .then(res => {
-                                console.log('axios success!', res);
-                        })
-                        .catch(e => {
-                                console.log('error: ', e);
-                        });
+                // await axios
+                //         .post('/api/form', {
+                //                 name,
+                //                 email,
+                //                 company,
+                //                 message
+                //         })
+                //         .then(res => {
+                //                 console.log('axios success!', res);
+                //         })
+                //         .catch(e => {
+                //                 console.log('error: ', e);
+                //         });
                 setName('');
                 setEmail('');
                 setCompany('');
