@@ -1,5 +1,31 @@
 .ContactContainer {
-	background-color: #fafafa;
-	min-height: 100vh;
-	padding-top: 65px;
+        background-color: #fafafa;
+        min-height: 100vh;
+        padding-top: 65px;
+}
+
+.FormContainer {
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+}
+
+.name,
+.email,
+.company,
+.message {
+        width: 75%;
+        display: inline-block;
+        line-height: 50px;
+        margin: 15px auto;
+}
+
+.submit {
+        -webkit-appearance: button;
+        width: 150px;
+        height: 55px;
+        margin: auto;
+        cursor: pointer;
 }
