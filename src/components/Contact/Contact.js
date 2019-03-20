@@ -40,6 +40,9 @@ const Contact = () => {
                         })
                         .then(res => {
                                 console.log('axios success!', res);
+                        })
+                        .catch(e => {
+                                console.log('error: ', e);
                         });
                 setName('');
                 setEmail('');
