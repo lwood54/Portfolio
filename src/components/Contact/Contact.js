@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import cls from './Contact.module.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Contact = () => {
         const [name, setName] = useState('');
