@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import cls from './Contact.module.css';
-// import axios from 'axios';
+import axios from 'axios';
 
 const Contact = () => {
         const [name, setName] = useState('');
@@ -31,6 +31,20 @@ const Contact = () => {
         const handleSubmit = async e => {
                 e.preventDefault();
                 console.log(name, 'submitted a message from ', company, 'saying: ', message);
+
+                axios.post(
+                        'https://formcarry.com/s/QYjWz6aXeju',
+                        { name, email, company, message },
+                        { headers: { Accept: 'application/json' } }
+                )
+                        .then(res => {
+                                console.log('success: ', res);
+                        })
+                        .catch(function(error) {
+                                console.log('error: ', error);
+                        });
+
+                e.preventDefault();
                 setName('');
                 setEmail('');
                 setCompany('');
@@ -73,7 +87,7 @@ const Contact = () => {
                                                 onChange={handleChange}
                                         />
 
-                                        <input type="submit" className={cls.submit} value="submit" />
+                                        <input type="submit" className={cls.submit} value="Send" />
                                 </form>
                         </div>
                 </ScrollableAnchor>
