@@ -5,11 +5,13 @@
 }
 
 .FormContainer {
-        width: 600px;
+        width: 90%;
+        max-width: 600px;
         margin: auto;
         display: flex;
         flex-direction: column;
-        background-color: gray;
+        border-radius: 4px;
+        background-color: #b2ebf2;
 }
 
 .name,
@@ -20,6 +22,7 @@
         display: inline-block;
         line-height: 50px;
         margin: 15px auto;
+        padding-left: 15px;
 }
 
 .submit {

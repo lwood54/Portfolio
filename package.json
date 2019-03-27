@@ -7,10 +7,7 @@
                 "@fortawesome/free-solid-svg-icons": "^5.7.2",
                 "@fortawesome/react-fontawesome": "^0.1.4",
                 "axios": "^0.18.0",
-                "body-parser": "^1.18.3",
-                "concurrently": "^4.1.0",
                 "express": "^4.16.4",
-                "nodemailer": "^5.1.1",
                 "path": "^0.12.7",
                 "react": "^16.8.1",
                 "react-dom": "^16.8.1",
@@ -22,7 +19,6 @@
         "scripts": {
                 "start": "react-scripts start",
                 "server": "node server.js",
-                "dev": "concurrently \"npm run server\" \"npm start\"",
                 "build": "react-scripts build",
                 "test": "react-scripts test",
                 "eject": "react-scripts eject"
