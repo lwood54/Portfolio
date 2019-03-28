@@ -40,7 +40,7 @@ const Contact = () => {
         const handleSubmit = e => {
                 e.preventDefault();
                 console.log(name, 'submitted a message from ', company, 'saying: ', message);
-
+                setSentNotice(true);
                 axios.post(
                         'https://formcarry.com/s/QYjWz6aXeju',
                         { name, email, company, message },
@@ -48,7 +48,6 @@ const Contact = () => {
                 )
                         .then(res => {
                                 console.log('success: ', res);
-                                setSentNotice(true);
                         })
                         .catch(function(error) {
                                 console.log('error: ', error);
