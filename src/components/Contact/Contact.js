@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
+import GitHub from './images/GitHub.png';
+import LinkedIn from './images/linkedin.svg';
+import Twitter from './images/twitter.png';
 
 import cls from './Contact.module.css';
 import axios from 'axios';
@@ -10,6 +13,7 @@ const Contact = () => {
         const [email, setEmail] = useState('');
         const [company, setCompany] = useState('');
         const [message, setMessage] = useState('');
+        const [sentNotice, setSentNotice] = useState(false);
         const handleChange = e => {
                 switch (e.target.name) {
                         case 'name':
@@ -28,7 +32,12 @@ const Contact = () => {
                                 return;
                 }
         };
-        const handleSubmit = async e => {
+        const handleSentNotice = () => {
+                window.setTimeout(() => {
+                        setSentNotice(false);
+                }, 2000);
+        };
+        const handleSubmit = e => {
                 e.preventDefault();
                 console.log(name, 'submitted a message from ', company, 'saying: ', message);
 
@@ -39,17 +48,22 @@ const Contact = () => {
                 )
                         .then(res => {
                                 console.log('success: ', res);
+                                setSentNotice(true);
                         })
                         .catch(function(error) {
                                 console.log('error: ', error);
                         });
-
-                e.preventDefault();
                 setName('');
                 setEmail('');
                 setCompany('');
                 setMessage('');
+                handleSentNotice();
         };
+        const notice = (
+                <div className={cls.noticeContainer}>
+                        <p>Thank you for reaching out. I look forward to talking with you!</p>
+                </div>
+        );
         return (
                 <ScrollableAnchor id="contact">
                         <div className={cls.ContactContainer}>
@@ -86,9 +100,23 @@ const Contact = () => {
                                                 value={message}
                                                 onChange={handleChange}
                                         />
-
                                         <input type="submit" className={cls.submit} value="Send" />
                                 </form>
+                                <div className={cls.socialMediaContainer}>
+                                        <a href={'https://github.com/lwood54'} target="blank">
+                                                <img src={GitHub} alt="GitHub" className={cls.icons} />
+                                        </a>
+                                        <a
+                                                href={'https://www.linkedin.com/in/logan-wood-8b3535109/'}
+                                                target="blank"
+                                        >
+                                                <img src={LinkedIn} alt="LinkedIn" className={cls.icons} />
+                                        </a>
+                                        <a href={'https://twitter.com/lwood54'} target="blank">
+                                                <img src={Twitter} alt="Twitter" className={cls.icons} />
+                                        </a>
+                                </div>
+                                {sentNotice ? notice : null}
                         </div>
                 </ScrollableAnchor>
         );
