@@ -64,10 +64,11 @@
 .socialMediaContainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-top: 15px;
 }
 
 .icons {
         max-width: 50px;
+        margin: 0 20px;
 }
