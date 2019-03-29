@@ -56,9 +56,9 @@ let projects = [
                                         <FontAwesomeIcon icon={faGamepad} className={cls.faSymbol} />
                                 </div>
                                 <p>
-                                        Built with React and CSS. (Rebuilt with React Hooks) Section 2 only
-                                        accessible if a score of 70 or more. Wanting to build this game got me
-                                        into coding.
+                                        Drag and Drop game built with React and CSS. (Rebuilt with React
+                                        Hooks) Section 2 only accessible if a score of 70 or more. Wanting to
+                                        build this game got me into coding.
                                 </p>
                         </div>
                 ),

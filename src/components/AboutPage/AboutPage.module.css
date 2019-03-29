@@ -186,7 +186,6 @@
         .aboutPageTopSection {
                 display: flex;
                 flex-direction: row;
-                max-height: 500px;
         }
         .ImageContainer {
                 float: none;

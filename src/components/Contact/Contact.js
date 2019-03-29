@@ -14,6 +14,7 @@ const Contact = () => {
         const [company, setCompany] = useState('');
         const [message, setMessage] = useState('');
         const [sentNotice, setSentNotice] = useState(false);
+        const [alertMessage, setAlertMessage] = useState('');
         const handleChange = e => {
                 switch (e.target.name) {
                         case 'name':
@@ -35,34 +36,36 @@ const Contact = () => {
         const handleSentNotice = () => {
                 window.setTimeout(() => {
                         setSentNotice(false);
-                }, 2000);
+                        setAlertMessage('');
+                }, 3000);
         };
         const handleSubmit = e => {
                 e.preventDefault();
-                console.log(name, 'submitted a message from ', company, 'saying: ', message);
                 setSentNotice(true);
-                axios.post(
-                        'https://formcarry.com/s/QYjWz6aXeju',
-                        { name, email, company, message },
-                        { headers: { Accept: 'application/json' } }
-                )
-                        .then(res => {
-                                console.log('success: ', res);
-                        })
-                        .catch(function(error) {
-                                console.log('error: ', error);
-                        });
-                setName('');
-                setEmail('');
-                setCompany('');
-                setMessage('');
+                if (name !== '' && company !== '' && email !== '' && message !== '') {
+                        setAlertMessage(
+                                <p>Thank you for reaching out. I look forward to talking with you!</p>
+                        );
+                        axios.post(
+                                'https://formcarry.com/s/QYjWz6aXeju',
+                                { name, email, company, message },
+                                { headers: { Accept: 'application/json' } }
+                        )
+                                .then(res => {
+                                        console.log('success: ', res);
+                                })
+                                .catch(function(error) {
+                                        console.log('error: ', error);
+                                });
+                        setName('');
+                        setEmail('');
+                        setCompany('');
+                        setMessage('');
+                } else {
+                        setAlertMessage(<p>Information is missing from this form.</p>);
+                }
                 handleSentNotice();
         };
-        const notice = (
-                <div className={cls.noticeContainer}>
-                        <p>Thank you for reaching out. I look forward to talking with you!</p>
-                </div>
-        );
         return (
                 <ScrollableAnchor id="contact">
                         <div className={cls.ContactContainer}>
@@ -115,7 +118,9 @@ const Contact = () => {
                                                 <img src={Twitter} alt="Twitter" className={cls.icons} />
                                         </a>
                                 </div>
-                                {sentNotice ? notice : null}
+                                {sentNotice ? (
+                                        <div className={cls.noticeContainer}>{alertMessage}</div>
+                                ) : null}
                         </div>
                 </ScrollableAnchor>
         );
