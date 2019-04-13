@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
 
-## Available Scripts
+This is my portfolio site. I have several of my projects in the projects carousel.
+These are my more recent projects focusing on the React/Node stack.
 
-In the project directory, you can run:
+I have older projects using Django and Python available on github.
 
-### `npm start`
+I chose to build this portfolio site with the only library being React. There is one package I used for smooth scrolling, but all the CSS is custom built, including the carousel in the projects section.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The carousel uses custom CSS animations I created.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## More about me
 
-### `npm test`
+If you have looked this far into my code, please allow me to describe myself in a little more detail.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Though I am currently a middle school science teacher, I have fallen in love with coding. Other than spending time with my family, it's what I most enjoy doing. I do have other hobbies that are currently on the back burner, such as photography and woodworking, both of which I am self-taught.
 
-### `npm run build`
+By self-taught, I mean I self-study. As a science teacher, the "why" is very important to me. I enjoy learning the fundamentals and trying to incorporate best practices as I learn them.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- From the rule of thirds in photography, to proper joinery techniques in woodworking like box-joints, mortise and tenon joints, and finishing techniques, I love to learn it all.
+- Programming is no different, however the level of complexity is wonderful. What I enjoy most about programming is that I am uncomfortable. It makes me question myself constantly. One moment I feel like I will never understand how to solve a problem, and the next I'm extatic beause I have figured out a working solution.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The Review Game identified in my projects list is what initially got me into programming 4 years ago. I made a game with cards for my science students and I saw too many shy or slower students struggling to be a part of the fast paced competition, so I thought I could make it a digital game where they could drag the pieces into the correct spots and it would keep score.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Obviously this "simple" idea had a lot more to it, and now I find myself learning, watching, practicing, and reading about programming and web development all the time.
 
-### `npm run eject`
+I understand that it might feel like a risk hiring a 37 year old career changer. However, I feel like if you got to know me, it would be clear that my passion and desire to learn and contribute could be an asset to any company.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Not only have I been a teacher for 11 years, but I worked as a social worker and fire fighter previously. I have diverse interests and passions, but a dedication to quality work and constant growth is a constant.

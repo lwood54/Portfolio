@@ -27,14 +27,18 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faFlask} className={cls.faSymbol} />
+                                        <a href="https://github.com/lwood54/science-7th-grade" target="blank">
+                                                <FontAwesomeIcon icon={faFlask} className={cls.faSymbol} />
+                                        </a>
                                 </div>
-                                <p>
-                                        A site built for my science students using ReactJS, Material-UI, and
-                                        CSS. Contains content and interactive review questions for all 26 7th
-                                        grade state science standards. There is a Drag and Drop Review game
-                                        for each unit as well.
-                                </p>
+                                <a href="https://github.com/lwood54/science-7th-grade" target="blank">
+                                        <p>
+                                                A site built for my science students using ReactJS,
+                                                Material-UI, and CSS. Contains content and interactive review
+                                                questions for all 26 7th grade state science standards. There
+                                                is a Drag and Drop Review game for each unit as well.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -53,13 +57,23 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faGamepad} className={cls.faSymbol} />
+                                        <a
+                                                href="https://github.com/lwood54/science-7th-grade/tree/master/src/components/Templates/GameTemplate"
+                                                target="blank"
+                                        >
+                                                <FontAwesomeIcon icon={faGamepad} className={cls.faSymbol} />
+                                        </a>
                                 </div>
-                                <p>
-                                        Drag and Drop game built with React and CSS. (Rebuilt with React
-                                        Hooks) Section 2 only accessible if a score of 70 or more. Wanting to
-                                        build this game got me into coding.
-                                </p>
+                                <a
+                                        href="https://github.com/lwood54/science-7th-grade/tree/master/src/components/Templates/GameTemplate"
+                                        target="blank"
+                                >
+                                        <p>
+                                                Drag and Drop game built with React and CSS. (Rebuilt with
+                                                React Hooks) Section 2 only accessible if a score of 70 or
+                                                more. Wanting to build this game got me into coding.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -73,12 +87,22 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faLaptopCode} className={cls.faSymbol} />
+                                        <a
+                                                href="https://codepen.io/lwood54/pen/ZxgMKp?editors=0110"
+                                                target="blank"
+                                        >
+                                                <FontAwesomeIcon
+                                                        icon={faLaptopCode}
+                                                        className={cls.faSymbol}
+                                                />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was completed as part of a Free Code Camp Challenge. I used
-                                        ReactJS on codepen.io
-                                </p>
+                                <a href="https://codepen.io/lwood54/pen/ZxgMKp?editors=0110" target="blank">
+                                        <p>
+                                                This was completed as part of a Free Code Camp Challenge. I
+                                                used ReactJS on codepen.io
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -92,13 +116,20 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faLaptopCode} className={cls.faSymbol} />
+                                        <a href="https://codepen.io/lwood54/pen/xWNJvY" target="blank">
+                                                <FontAwesomeIcon
+                                                        icon={faLaptopCode}
+                                                        className={cls.faSymbol}
+                                                />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was completed as part of a Free Code Camp Challenge. I used
-                                        ReactJS and MaterializeCSS on codepen.io. Try to beat the computer or
-                                        play against a friend.
-                                </p>
+                                <a href="https://codepen.io/lwood54/pen/xWNJvY" target="blank">
+                                        <p>
+                                                This was completed as part of a Free Code Camp Challenge. I
+                                                used ReactJS and MaterializeCSS on codepen.io. Try to beat the
+                                                computer or play against a friend.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -112,12 +143,22 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faCalculator} className={cls.faSymbol} />
+                                        <a
+                                                href="https://codepen.io/lwood54/pen/NYEyjG?editors=0110"
+                                                target="blank"
+                                        >
+                                                <FontAwesomeIcon
+                                                        icon={faCalculator}
+                                                        className={cls.faSymbol}
+                                                />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was completed as part of a Free Code Camp Challenge. I used
-                                        ReactJS on codepen.io.
-                                </p>
+                                <a href="https://codepen.io/lwood54/pen/NYEyjG?editors=0110" target="blank">
+                                        <p>
+                                                This was completed as part of a Free Code Camp Challenge. I
+                                                used ReactJS on codepen.io.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -131,13 +172,20 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faLaptopCode} className={cls.faSymbol} />
+                                        <a href="https://codepen.io/lwood54/pen/bvzVvg" target="blank">
+                                                <FontAwesomeIcon
+                                                        icon={faLaptopCode}
+                                                        className={cls.faSymbol}
+                                                />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was completed as part of a Free Code Camp Challenge. You can
-                                        adjust break time and work time while in use. Made with ReactJS and
-                                        MaterializeCSS on codepen.io.
-                                </p>
+                                <a href="https://codepen.io/lwood54/pen/bvzVvg" target="blank">
+                                        <p>
+                                                This was completed as part of a Free Code Camp Challenge. You
+                                                can adjust break time and work time while in use. Made with
+                                                ReactJS and MaterializeCSS on codepen.io.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -151,13 +199,18 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faSearch} className={cls.faSymbol} />
+                                        <a href="https://codepen.io/lwood54/pen/dmyNEE" target="blank">
+                                                <FontAwesomeIcon icon={faSearch} className={cls.faSymbol} />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was completed as part of a Free Code Camp Challenge. I used
-                                        ReactJS and MaterializeCSS as well as Wikipedia's API. You can search
-                                        their database and pull up links to relevant articles.
-                                </p>
+                                <a href="https://codepen.io/lwood54/pen/dmyNEE" target="blank">
+                                        <p>
+                                                This was completed as part of a Free Code Camp Challenge. I
+                                                used ReactJS and MaterializeCSS as well as Wikipedia's API.
+                                                You can search their database and pull up links to relevant
+                                                articles.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -171,12 +224,23 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faComments} className={cls.faSymbol} />
+                                        <a
+                                                href="https://github.com/lwood54/basic_social_media_web_app"
+                                                target="blank"
+                                        >
+                                                <FontAwesomeIcon icon={faComments} className={cls.faSymbol} />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was one of several projects completed in Andrew Mead's NodeJS
-                                        course using tools such as MongoDB, NodeJS, Socket.IO, and ExpressJS.
-                                </p>
+                                <a
+                                        href="https://github.com/lwood54/basic_social_media_web_app"
+                                        target="blank"
+                                >
+                                        <p>
+                                                This was one of several projects completed in Andrew Mead's
+                                                NodeJS course using tools such as MongoDB, NodeJS, Socket.IO,
+                                                and ExpressJS.
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
@@ -190,12 +254,19 @@ let projects = [
                 description: (
                         <div>
                                 <div className={cls.faContainer}>
-                                        <FontAwesomeIcon icon={faDollarSign} className={cls.faSymbol} />
+                                        <a href="https://github.com/lwood54/expensifyApp" target="blank">
+                                                <FontAwesomeIcon
+                                                        icon={faDollarSign}
+                                                        className={cls.faSymbol}
+                                                />
+                                        </a>
                                 </div>
-                                <p>
-                                        This was another course I completed by Andrew Mead using React,
-                                        Firebase, and Redux.{' '}
-                                </p>
+                                <a href="https://github.com/lwood54/expensifyApp" target="blank">
+                                        <p>
+                                                This was another course I completed by Andrew Mead using
+                                                React, Firebase, and Redux.{' '}
+                                        </p>
+                                </a>
                         </div>
                 ),
                 jsx: (
