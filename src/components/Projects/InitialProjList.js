@@ -43,7 +43,7 @@ let projects = [
                 ),
                 jsx: (
                         <a
-                                href="https://lwood-science.herokuapp.com/"
+                                href="https://logan-wood-science.netlify.com/"
                                 target="blank"
                                 className={cls.Button}
                                 key="0"
@@ -77,7 +77,7 @@ let projects = [
                         </div>
                 ),
                 jsx: (
-                        <a href="https://lwood-science.herokuapp.com/unit4_2/game4_2" target="blank">
+                        <a href="https://logan-wood-science.netlify.com/unit4_2/game4_2" target="blank">
                                 <img src={review_game} alt="review game" className={cls.Image} />
                         </a>
                 )
