@@ -14,9 +14,10 @@ import JS from './images/JS.png';
 import ReactLogo from './images/React.png';
 import NodeJS from './images/nodeJS.png';
 import node_express from './images/node-express.jpg';
-import Material_UI from './images/material_ui.png';
+// import Material_UI from './images/material_ui.png';
 import GitHub from './images/GitHub.svg';
-import Gatsby from './images/GatsbyJS.png';
+// import Gatsby from './images/GatsbyJS.png';
+import scss from './images/scss.png';
 import Vue from './images/vue.png';
 
 configureAnchors({ scrollDuration: 500 });
@@ -34,17 +35,10 @@ const AboutPage = () => {
                                                         <h3 className={cls.AboutTitle}>About</h3>
                                                         <br />
                                                         <p className={cls.AboutParagraph}>
-                                                                I'm resourceful, hard-working, and I value
-                                                                learning and self-motivation. I'm currently a
-                                                                middle school science teacher with 11 years of
-                                                                experience communicating complex ideas to a
-                                                                diverse audience.
+                                                                Resourceful, hard-working, self-motivated with a constant growth mindset, I can provide organization, creativity, and enthusiasm when problem solving.
                                                         </p>
                                                         <p className={cls.AboutParagraph}>
-                                                                Even with the demands of being a teacher,
-                                                                husband, and father, I've found time and
-                                                                resources to teach myself photography,
-                                                                woodworking, and programming.
+                                                                With my diverse background, an excitement about new and evolving technologies, and a desire to continue to progress towards mastery of fundamental skills, I hope to be an essential member of any team.
                                                         </p>
                                                         <br />
                                                 </div>
@@ -82,10 +76,29 @@ const AboutPage = () => {
                                                         <div className={cls.barContainer}>
                                                                 <div
                                                                         className={cls.insideBar}
-                                                                        style={{ width: '95%' }}
+                                                                        style={{ width: '90%' }}
                                                                 >
                                                                         <p className={cls.insideBarContent}>
                                                                                 React
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div className={cls.Tools}>
+                                                        <div className={cls.toolIcons}>
+                                                                <img
+                                                                        src={Vue}
+                                                                        alt="Vue JS"
+                                                                        className={cls.ToolsImage}
+                                                                />
+                                                        </div>
+                                                        <div className={cls.barContainer}>
+                                                                <div
+                                                                        className={cls.insideBar}
+                                                                        style={{ width: '90%' }}
+                                                                >
+                                                                        <p className={cls.insideBarContent}>
+                                                                                Vue
                                                                         </p>
                                                                 </div>
                                                         </div>
@@ -166,42 +179,23 @@ const AboutPage = () => {
                                                 <div className={cls.Tools}>
                                                         <div className={cls.toolIcons}>
                                                                 <img
-                                                                        src={Material_UI}
-                                                                        alt="Material UI"
+                                                                        src={scss}
+                                                                        alt="SCSS"
                                                                         className={cls.ToolsImage}
                                                                 />
                                                         </div>
                                                         <div className={cls.barContainer}>
                                                                 <div
                                                                         className={cls.insideBar}
-                                                                        style={{ width: '60%' }}
+                                                                        style={{ width: '70%' }}
                                                                 >
                                                                         <p className={cls.insideBarContent}>
-                                                                                Material-UI
+                                                                                SCSS
                                                                         </p>
                                                                 </div>
                                                         </div>
                                                 </div>
 
-                                                <div className={cls.Tools}>
-                                                        <div className={cls.toolIcons}>
-                                                                <img
-                                                                        src={Gatsby}
-                                                                        alt="Gatsby JS"
-                                                                        className={cls.ToolsImage}
-                                                                />
-                                                        </div>
-                                                        <div className={cls.barContainer}>
-                                                                <div
-                                                                        className={cls.insideBar}
-                                                                        style={{ width: '30%' }}
-                                                                >
-                                                                        <p className={cls.insideBarContent}>
-                                                                                Gatsby
-                                                                        </p>
-                                                                </div>
-                                                        </div>
-                                                </div>
                                                 <div className={cls.Tools}>
                                                         <div className={cls.toolIcons}>
                                                                 <img
@@ -217,25 +211,6 @@ const AboutPage = () => {
                                                                 >
                                                                         <p className={cls.insideBarContent}>
                                                                                 Express
-                                                                        </p>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                                <div className={cls.Tools}>
-                                                        <div className={cls.toolIcons}>
-                                                                <img
-                                                                        src={Vue}
-                                                                        alt="Vue JS"
-                                                                        className={cls.ToolsImage}
-                                                                />
-                                                        </div>
-                                                        <div className={cls.barContainer}>
-                                                                <div
-                                                                        className={cls.insideBar}
-                                                                        style={{ width: '15%' }}
-                                                                >
-                                                                        <p className={cls.insideBarContent}>
-                                                                                Vue
                                                                         </p>
                                                                 </div>
                                                         </div>

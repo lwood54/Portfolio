@@ -35,8 +35,8 @@ let projects = [
                                         <p>
                                                 A site built for my science students using ReactJS,
                                                 Material-UI, and CSS. Contains content and interactive review
-                                                questions for all 26 7th grade state science standards. There
-                                                is a Drag and Drop Review game for each unit as well.
+                                                questions for 7th grade state science standards. There
+                                                is a Drag and Drop Review game for the units as well.
                                         </p>
                                 </a>
                         </div>
