@@ -30,7 +30,7 @@ let projects = [
     ),
     jsx: (
       <a href="https://logan-wood-science.netlify.com/dnd_games" target="blank" className={cls.Button} key="0">
-        <img src={science_site} alt="Mr Wood's Science Page" className={cls.Image} />
+        <img src={review_game} alt="Mr Wood's Science Page" className={cls.Image} />
       </a>
     ),
   },
