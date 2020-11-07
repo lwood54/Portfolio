@@ -6,7 +6,7 @@ import cls from "./Projects.module.css";
 import simonImg from "./images/simon.png";
 import science_site from "./images/science_site.png";
 import tictactoe from "./images/tictactoe.png";
-import review_game from "./images/review_game.png";
+import review_game from "./images/DnDGame.png";
 import calculator from "./images/calculator.png";
 import pomodoroClock from "./images/pomodoroClock.png";
 import wiki_search from "./images/wiki_search.png";
