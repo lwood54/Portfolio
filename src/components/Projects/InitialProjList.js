@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGamepad, faFlask, faLaptopCode, faCalculator, faSearch, faComments, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { faFlask, faLaptopCode, faCalculator, faSearch, faComments, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 import cls from "./Projects.module.css";
 import simonImg from "./images/simon.png";
-import science_site from "./images/science_site.png";
+// import science_site from "./images/science_site.png";
 import tictactoe from "./images/tictactoe.png";
 import review_game from "./images/DnDGame.png";
 import calculator from "./images/calculator.png";
@@ -24,7 +24,7 @@ let projects = [
           </a>
         </div>
         <a href="https://github.com/lwood54/biology_games" target="blank">
-          <p>A site being built for biology games and content for students. Includes scoring and round tracking.</p>
+          <p>A site being built with Svelte and Sapper for biology games and content for students. Includes scoring and round tracking.</p>
         </a>
       </div>
     ),
@@ -34,29 +34,6 @@ let projects = [
       </a>
     ),
   },
-  // {
-  //   title: "Science Review Game",
-  //   description: (
-  //     <div>
-  //       <div className={cls.faContainer}>
-  //         <a href="https://github.com/lwood54/science-7th-grade/tree/master/src/components/Templates/GameTemplate" target="blank">
-  //           <FontAwesomeIcon icon={faGamepad} className={cls.faSymbol} />
-  //         </a>
-  //       </div>
-  //       <a href="https://github.com/lwood54/science-7th-grade/tree/master/src/components/Templates/GameTemplate" target="blank">
-  //         <p>
-  //           Drag and Drop game built with React and CSS. (Rebuilt with React Hooks) Section 2 only accessible if a score of 70 or more. Wanting to
-  //           build this game got me into coding.
-  //         </p>
-  //       </a>
-  //     </div>
-  //   ),
-  //   jsx: (
-  //     <a href="https://logan-wood-science.netlify.com/unit4_2/game4_2" target="blank">
-  //       <img src={review_game} alt="review game" className={cls.Image} />
-  //     </a>
-  //   ),
-  // },
   {
     title: "Simon Game",
     description: (

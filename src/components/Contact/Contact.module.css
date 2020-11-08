@@ -1,79 +1,79 @@
 .ContactContainer {
-        background-color: #fafafa;
-        min-height: 100vh;
-        padding-top: 65px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding-top: 65px;
 }
 
 .FormContainer {
-        width: 90%;
-        max-width: 600px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        background-color: #b2ebf2;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: #b2ebf2;
 }
 
 .noticeContainer {
-        width: 65%;
-        max-width: 300px;
-        margin: auto;
-        margin-top: 15px;
-        border-radius: 4px;
-        padding: 15px;
-        background-color: #b2ebf2;
-        text-align: center;
-        font-weight: 500;
+  width: 65%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #b2ebf2;
+  text-align: center;
+  font-weight: 500;
 }
 
 .name,
 .email,
 .company,
 .message {
-        width: 75%;
-        display: inline-block;
-        line-height: 50px;
-        margin: 15px auto;
-        padding-left: 15px;
-        border: none;
-        outline: none;
+  width: 75%;
+  display: inline-block;
+  line-height: 50px;
+  margin: 15px auto;
+  padding-left: 15px;
+  border: none;
+  outline: none;
 }
 
 .name:focus,
 .email:focus,
 .company:focus,
 .message:focus {
-        background-color: #e4eef0;
+  background-color: #e4eef0;
 }
 
 .submit {
-        -webkit-appearance: none;
-        width: 150px;
-        height: 55px;
-        margin: auto;
-        cursor: pointer;
-        font-size: 1.2em;
-        outline: none;
-        border-radius: 4px;
-        border: none;
-        background-color: #aec5ca;
-        margin-bottom: 15px;
-        box-shadow: 1px 1px 3px #40939e;
+  -webkit-appearance: none;
+  width: 150px;
+  height: 45px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 1.2em;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  background-color: #5991f0;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 3px #38d6eb;
 }
 
 .submit:active {
-        box-shadow: none;
+  box-shadow: none;
 }
 
 .socialMediaContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .icons {
-        max-width: 50px;
-        margin: 0 20px;
+  max-width: 50px;
+  margin: 0 20px;
 }
